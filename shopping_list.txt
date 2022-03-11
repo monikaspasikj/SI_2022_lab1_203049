@@ -1,5 +1,6 @@
 mleko x 1
 jogurt x 2
 maslinki x 3
-leb x 1
+humus x 1
 kafe x 5
+musli  x 1
