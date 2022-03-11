@@ -2,4 +2,4 @@ mleko x 1
 jogurt x 2
 maslinki x 3
 leb x 1
-kafe x 5
+kafe x 10
