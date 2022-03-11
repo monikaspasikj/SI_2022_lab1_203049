@@ -1,0 +1,162 @@
+Лабораториска вежба 1
+Моника Спасиќ 203049 -ПИТ10
+
+1.Креирав профил на Github, monikaspasikj -https://github.com/monikaspasikj/
+2.Во settings од main главната гранка ја сменив во master
+3.Со кликање на new во Repossitories, креирав нов репозиториум кое носи името SI_2022_lab1_203049,
+  и тој е приватен(за сега, во моментот кога го пишувам ова), и исто така фајлот README го напишав 
+  моето име, презиме и индекс
+4.Со командата git clone i posle https линк кој води до мојот репозиториум го клонирав репозиториумот
+  во мојот компјутер, А со командата cd SI_2022_lab1_203049 пристапив до него
+5. Со командата typ nul > shopping_list.txt го креирав фајлот , а потоа со командата 
+   echo imeNaProzivod > shopping_list.txt ги додавав ставките во фајлот. Потоа до командите git add .
+   и git commit -m "KakoKeSeVikaKomit" направив нов комит и додадов порака на него.
+6.Во фајлот од погоре што го креирав додадов количини на ставките и со истите наредби за додавање на комит, 
+  и порака на него ги употребив.
+7.Со git checkout -b "ImeNaBranch" креирав два посебни гранки.
+8.C:\Users\Monika\SI_2022_lab1_203049>git log
+commit 6a53f4275513237eebd70a9893e0b9469e66e3b9 (HEAD -> branch2, master, branch1)
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:14:58 2022 +0100
+
+    Add quantities to the items.
+
+commit d3064895a20c8ad48a03c953c846ad863d9d4e03
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:13:03 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit dfc2c8b2dbc10199c6dc79fa434f70a2e583ab2f (origin/master, origin/HEAD)
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:08:30 2022 +0100
+
+    Create README.md
+
+commit b4b560c71040fde01c0b97047de01c37140a53d8
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:07:10 2022 +0100
+
+    Initial commit
+9.Со команда git push origin master ili branch1 ili branch2
+10.Се префрламе git checkout se prefrlame na granka
+11.После промента на ставката правиме git add . и git commit -m "ImeNaKomit"
+12.За да ја враќаме на гранката правиме git checkout branch1
+13.Ја менуваме ставката и после правиме git add . и git commit- m "SoPOraka"
+14.За синхронизација на гранките правиме git push ImeNaGranka
+15.За да се префрлиме на гранката brranch2 правиме git checkout branch2
+16.Го менуваме името на ставката и правиме git add . и git commit -m "SoPorakataKojaEDadena"
+17.C:\Users\Monika\SI_2022_lab1_203049>git log
+commit 861e739dd97a929f2854ada2f659ce7c8120854d (HEAD -> branch2)
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:22:00 2022 +0100
+
+    Modify item #4
+
+commit 6a53f4275513237eebd70a9893e0b9469e66e3b9 (origin/branch2)
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:14:58 2022 +0100
+
+    Add quantities to the items.
+
+commit d3064895a20c8ad48a03c953c846ad863d9d4e03
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:13:03 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit dfc2c8b2dbc10199c6dc79fa434f70a2e583ab2f
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:08:30 2022 +0100
+
+    Create README.md
+
+commit b4b560c71040fde01c0b97047de01c37140a53d8
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:07:10 2022 +0100
+
+    Initial commit
+18.Први бидејќи имаме да додавеме ја додаваме ставката, а потоа бидејќи треба да го смениме
+   предходниот комит користиме git reset --soft HEAD^ и на крај го додаваме комитот.
+19.C:\Users\Monika\SI_2022_lab1_203049>git log
+commit 861e739dd97a929f2854ada2f659ce7c8120854d (HEAD -> branch2)
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:22:00 2022 +0100
+
+    Modify item #4
+
+commit 6a53f4275513237eebd70a9893e0b9469e66e3b9 (origin/branch2)
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:14:58 2022 +0100
+
+    Add quantities to the items.
+
+commit d3064895a20c8ad48a03c953c846ad863d9d4e03
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:13:03 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit dfc2c8b2dbc10199c6dc79fa434f70a2e583ab2f
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:08:30 2022 +0100
+
+    Create README.md
+
+commit b4b560c71040fde01c0b97047de01c37140a53d8
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:07:10 2022 +0100
+
+    Initial commit
+
+C:\Users\Monika\SI_2022_lab1_203049>git add shopping_list.txt
+
+C:\Users\Monika\SI_2022_lab1_203049>git --amend -m "Modify item #4 and add item #6"
+unknown option: --amend
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+C:\Users\Monika\SI_2022_lab1_203049>git commit --amend -m "Modify item #4 and add item #6"
+[branch2 9127941] Modify item #4 and add item #6
+ Date: Fri Mar 11 22:22:00 2022 +0100
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Monika\SI_2022_lab1_203049>git log
+commit 91279416402325ab08f26ce8a8db158bd69d68c4 (HEAD -> branch2)
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:22:00 2022 +0100
+
+    Modify item #4 and add item #6
+
+commit 6a53f4275513237eebd70a9893e0b9469e66e3b9 (origin/branch2)
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:14:58 2022 +0100
+
+    Add quantities to the items.
+
+commit d3064895a20c8ad48a03c953c846ad863d9d4e03
+Author: Monika Spasik <monikaspasik@yahoo.com>
+Date:   Fri Mar 11 22:13:03 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit dfc2c8b2dbc10199c6dc79fa434f70a2e583ab2f
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:08:30 2022 +0100
+
+    Create README.md
+
+commit b4b560c71040fde01c0b97047de01c37140a53d8
+Author: Monika Spasikj <80158055+monikaspasikj@users.noreply.github.com>
+Date:   Fri Mar 11 22:07:10 2022 +0100
+
+    Initial commit
+20.Со hit checkout master се префрлуваме на мастер и потоа со git merge branch1 со рекурзивна стратегија
+21.Тука кога со git merge branch2 се појави конфликт и тој требаше да се реши со нешто да се избрише од
+   фајлот и потоа додадовме комит нов и се среди
+22.Со истите команди git add . и git commit -m додавме во фајлот
+23.Со git push origin master...
